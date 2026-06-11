@@ -108,10 +108,18 @@
     .logo > p {
       color: #01011F;
       white-space: nowrap;
-      display: flex;
+      display: block;
       font-weight: 700;
       margin-left: 14px;
       font-size: 2.4rem;
+      line-height: 1.2;
+    }
+    .logo .logoSub {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #4a4f3d;
+      letter-spacing: 0.5px;
     }
     .rounded-font {
       font-family: "ui-rounded", -apple-system, BlinkMacSystemFont,
@@ -267,6 +275,7 @@
       header { padding: 0 20px; }
       .logo { height: 80px; }
       .logo > p { font-size: 2rem; }
+      .logo .logoSub { font-size: 1.3rem; }
       .scroll { height: 80px; justify-content: flex-end; }
       .header-container > .module-text-container h1 { font-size: 4rem; }
       .header-container > .module-text-container { padding-bottom: 60px; }
@@ -291,6 +300,7 @@
       .policy-section strong,
       .module h2 b,
       .logo > p { color: #fff; }
+      .logo .logoSub { color: #d6dec5; }
       .header-container > .module-text-container .lead { color: #d6dec5; }
       .note { background: #262826; color: #fff; }
       .note .path { background: #1c1c1e; color: #fff; border-color: #3b3e36; }
@@ -311,7 +321,7 @@
         <header>
           <div class="logo">
             <div class="headerIconBox"><img src="assets/appicon.png" alt="Planto" /></div>
-            <p class="rounded-font">Planto 你的植物生活夥伴</p>
+            <p class="rounded-font">Planto<span class="logoSub">你的植物生活夥伴</span></p>
           </div>
           <nav class="scroll">
             <ul>
